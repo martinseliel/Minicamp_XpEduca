@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Numero primo</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Numeros Primos</h2>
+
+    <script>
+        //O aluno deverá criar um programa para informar
+        // se determinado número é primo ou não.
+
+        numeroPrimo(293)
+        function numeroPrimo(numero) {
+            let primo = true
+            for (let contador = 2; contador < numero; contador++) {
+                if (numero % contador === 0) {
+                    primo = false;
+                    break
+                }
+            }
+            //usando o se - ele sendo verdadeiro - exibi o numero
+            //sendo falso exibi o numero e informa se primo ou não.
+
+            if (primo == true) {
+                console.log('O numero', numero, 'é primo');
+            } else {
+                console.log('O numero', numero, 'não é primo')
+            }
+        }
+    </script>
+</body>
+</html>

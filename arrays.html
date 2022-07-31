@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Utilizando litas - vetores - arrays</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Listas - vetores - arrays</h2>
+
+
+    <script>
+        // crindo uma lista - arrays
+        var carros = ["Gol", "Palio", "Uno"];
+        console.log(carros);
+
+        var primeiroCarro = carros[0];
+        var segundoCarro = carros[1];
+        var teirceiroCarro = carros[2];
+
+        console.log("primeira posicao: " + primeiroCarro);
+        console.log("segunda posicao: " + segundoCarro);
+        console.log("terceira posicao: " + terceiroCarro);
+
+        carros[2] = "Argo";
+        console.log(carros[2]);
+
+        console.log("Tamanho do Array: " + carros.length)
+        console.log("ultimo elemento do array: " + carros[carros.length - 1]);
+
+        carros[3] = "Sandero";
+        console.log("ultimo elemento do array: " + carros[carros.length - 1]);
+
+        carros[carros.length] = "Civic";
+        console.log("ultimo elemento do array: " + carros[carros.length - 1]);
+
+        // função de inserir 
+        carros.push("Polo");
+        console.log(carros);
+
+        // remover ultimo elemento da lista
+        console.log(carros.pop());
+        console.log(carros);
+
+        // inserir elemento no inicio da lista
+        carro.unshift("Jetta");
+        console.log(carros);
+
+        //remover primeiro elementos
+        console.log(carros.shift());
+        console.log(carros);
+
+    </script>
+</body>
+
+</html>

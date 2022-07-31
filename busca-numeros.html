@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Utilizando break </title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Utilizando break - interromper uma estrutura de repetição</h2>
+
+    <p>
+        1 - receber um numero como paramnentro<br>
+        2 - Executar um for na lista e para cada elemento verificar se é igual ao numero buscado.<br>
+        3- Quando encontrar, interromper a execução e retornar true.<br>
+        4- Se chegar ate o fim sem encontrar, retornar false.
+    </p>
+
+    <script>
+        //criando uma array de 9 pociçoes
+        var lista = [19, 54, 18, 11, 47, 98, 36, 44, 87];
+
+        //criar uma função para verificar se existe o numero na lista
+        function verificaNumero(numero) {
+            var existe = false;
+            for (var i = 0; i < lista.length; i++) {
+                if (lista[i] === numero) {
+                    existe = true;
+                    break;
+                }
+            }
+            return existe;
+        }
+    </script>
+</body>
+
+</html>
